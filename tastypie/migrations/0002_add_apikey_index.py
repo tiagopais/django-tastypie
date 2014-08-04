@@ -7,6 +7,9 @@ from django.db import models
 from tastypie.compat import AUTH_USER_MODEL
 
 
+AUTH_USER_MODEL = getattr(settings, 'AUTH_USER_MODEL', 'auth.User')
+
+
 class Migration(SchemaMigration):
 
     def forwards(self, orm):
