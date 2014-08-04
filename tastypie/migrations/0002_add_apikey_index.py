@@ -1,6 +1,7 @@
 # -*- coding: utf-8 -*-
 from __future__ import unicode_literals
 import datetime
+from django.conf import settings
 from south.db import db
 from south.v2 import SchemaMigration
 from django.db import models
