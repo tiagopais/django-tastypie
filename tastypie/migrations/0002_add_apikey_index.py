@@ -5,7 +5,6 @@ from django.conf import settings
 from south.db import db
 from south.v2 import SchemaMigration
 from django.db import models
-from tastypie.compat import AUTH_USER_MODEL
 
 
 AUTH_USER_MODEL = getattr(settings, 'AUTH_USER_MODEL', 'auth.User')
